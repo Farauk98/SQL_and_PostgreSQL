@@ -12,3 +12,16 @@ CREATE TABLE cities (
   area INTEGER           -- Area of the city (integer data type, assumed in square kilometers)
 );
 ```
+
+# Inserting Data into a Table
+The 'INSERT INTO' statement is used to add data to a table. You can insert one row at a time or multiple rows in a single statement.
+
+## General Syntax
+
+```sql
+INSERT INTO cities (name, country, population, area)
+VALUES ('Tokyo','Japan',38505000, 8223),
+	('Delhi','India',28125000, 2240),
+  ('Shanghai','China',22125000, 4015),
+  ('Sao Paulo','Brazil', 20935000, 3043);     
+```
