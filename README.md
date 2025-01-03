@@ -13,5 +13,5 @@ This repository contains my notes, exercises, and tests from the **"SQL and Post
 ## Course Sections
 
 1. **Simple - But Powerful - SQL Statements**
-- [Notes for Section 1](./Section-01/Notes.md)
-   
+  - [Notes for Section 1](./Section-01/Notes.md)
+  - [Exercises and Solutions](./Section-01/Exercises/Exercises.md)
