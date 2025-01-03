@@ -1,4 +1,4 @@
-# Creating Tables in SQL
+# 1. Creating Tables in SQL
 
 The `CREATE TABLE` statement is used to define a new table in a database.
 
@@ -25,7 +25,7 @@ CREATE TABLE cities (
 );
 ```
 
-# Inserting Data into a Table
+# 2. Inserting Data into a Table
 The `INSERT INTO` statement is used to add data to a table. You can insert one row at a time or multiple rows in a single statement.
 
 ## General Syntax
@@ -46,7 +46,7 @@ VALUES ('Tokyo','Japan',38505000, 8223),
   	('Sao Paulo','Brazil', 20935000, 3043);     
 ```
 
-# Selecting Data from a Table
+# 3. Selecting Data from a Table
 
 The `SELECT` statement is used to retrieve data from a table. You can choose specific columns to display or select all columns using *.
 
@@ -66,7 +66,7 @@ SELECT name, country
 FROM cities;
 ```
 
-# Calculated Columns & Renaming Columns
+# 4. Calculated Columns & Renaming Columns
 
 A calculated column is derived from other columns in a table. You can use mathematical operations or functions to calculate values.
 You can rename columns temporarily in your query result using the `AS` keyword. This is useful for making the output more readable or for displaying more descriptive column names.
@@ -91,4 +91,50 @@ The following SQL query calculates the population density by dividing the popula
 ```sql
 SELECT population / area AS population_density
 FROM cities;
+```
+
+# 5. String Operators and Functions
+
+SQL provides a variety of string operators and functions that allow you to manipulate text data. These operators and functions can be used for tasks like concatenating strings, changing case, and finding string lengths.
+
+
+| Operator / Function | Description                                                | Example                                                   |
+|---------------------|------------------------------------------------------------|-----------------------------------------------------------|
+| `||`                | String concatenation operator (in some SQL dialects)       | `SELECT first_name || ' ' || last_name FROM employees;`   |
+| `concat()`          | Concatenates two or more strings                            | `SELECT concat(first_name, ' ', last_name) FROM employees;` |
+| `lower()`           | Converts a string to lowercase                              | `SELECT lower(city_name) FROM cities;`                    |
+| `length()`          | Returns the length of a string                              | `SELECT length(city_name) FROM cities;`                   |
+| `upper()`           | Converts a string to uppercase                              | `SELECT upper(city_name) FROM cities;`                    |
+
+## Examples
+
+Here are some examples demonstrating the use of string operators and functions in SQL:
+
+```sql
+-- Concatenating name and country using || operator
+SELECT name || country FROM cities;
+
+-- Concatenating name and country with a comma in between
+SELECT name || ', ' || country FROM cities;
+
+-- Concatenating name and country with a comma and aliasing the result as "location"
+SELECT name || ', ' || country AS location FROM cities;
+
+-- Concatenating name and country using CONCAT() function
+SELECT CONCAT(name, country) AS location FROM cities;
+
+-- Concatenating name and country with a comma and aliasing the result as "location"
+SELECT CONCAT(name, ', ', country) AS location FROM cities;
+
+-- Concatenating and converting both name and country to uppercase
+SELECT
+  CONCAT(UPPER(name), ', ', UPPER(country)) AS location
+FROM
+  cities;
+
+-- Converting the concatenated name and country to uppercase
+SELECT
+  UPPER(CONCAT(name, ', ', country)) AS location
+FROM
+  cities;
 ```
