@@ -80,7 +80,7 @@ You can rename columns temporarily in your query result using the `AS` keyword. 
 | `*`      | Multiplication                                   | `SELECT population * area FROM cities;`                   |
 | `/`      | Division                                         | `SELECT population / area FROM cities;`                   |
 | `^`      | Exponentiation   | `SELECT population^2 FROM cities;`                |
-| `\|/`     | Square root    | `SELECT |/ area FROM cities;`                          |
+| `\|/`     | Square root    | `SELECT \|/ area FROM cities;`                          |
 | `@`      | Absolute Value | `SELECT @ area FROM cities;`                        |  
 | `%`      | Remainder | `SELECT area % 10000 FROM cities;`                        |  
 
