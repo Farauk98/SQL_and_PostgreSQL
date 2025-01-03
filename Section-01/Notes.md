@@ -100,7 +100,7 @@ SQL provides a variety of string operators and functions that allow you to manip
 
 | Operator / Function | Description                                                | Example                                                   |
 |---------------------|------------------------------------------------------------|-----------------------------------------------------------|
-| `||`                | String concatenation operator (in some SQL dialects)       | `SELECT first_name || ' ' || last_name FROM employees;`   |
+| `\|\|`                | String concatenation operator (in some SQL dialects)       | `SELECT first_name \|\| ' ' \|\| last_name FROM employees;`   |
 | `concat()`          | Concatenates two or more strings                            | `SELECT concat(first_name, ' ', last_name) FROM employees;` |
 | `lower()`           | Converts a string to lowercase                              | `SELECT lower(city_name) FROM cities;`                    |
 | `length()`          | Returns the length of a string                              | `SELECT length(city_name) FROM cities;`                   |
