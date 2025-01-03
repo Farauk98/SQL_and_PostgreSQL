@@ -18,4 +18,4 @@ This repository contains my notes, exercises, and tests from the **"SQL and Post
 
 2. **Simple - But Powerful - SQL Statements**
   - [Notes for Section 2](./Section-02/Notes.md)
-  - [Exercises and Solutions](./Section-02/Exercises/Exercises.md)****
+  - [Exercises and Solutions](./Section-02/Exercises/Exercises.md)
