@@ -65,3 +65,30 @@ The following SQL code retrieves the name and country columns from the cities ta
 SELECT name, country
 FROM cities;
 ```
+
+# Calculated Columns & Renaming Columns
+
+A calculated column is derived from other columns in a table. You can use mathematical operations or functions to calculate values.
+You can rename columns temporarily in your query result using the `AS` keyword. This is useful for making the output more readable or for displaying more descriptive column names.
+
+## Mathematical Operators in SQL
+
+| Operator | Description                                      | Example                                                   |
+|----------|--------------------------------------------------|-----------------------------------------------------------|
+| `+`      | Addition                                         | `SELECT population + area FROM cities;`                   |
+| `-`      | Subtraction                                      | `SELECT population - area FROM cities;`                   |
+| `*`      | Multiplication                                   | `SELECT population * area FROM cities;`                   |
+| `/`      | Division                                         | `SELECT population / area FROM cities;`                   |
+| `^`      | Exponentiation   | `SELECT population^2 FROM cities;`                |
+| `|/`     | Square root    | `SELECT |/ area FROM cities;`                          |
+| `@`      | Absolute Value | `SELECT @ area FROM cities;`                        |  
+| `%`      | Remainder | `SELECT area % 10000 FROM cities;`                        |  
+
+## Example: Calculating Population Density
+
+The following SQL query calculates the population density by dividing the population by the area and rename column as population_density:
+
+```sql
+SELECT population / area AS population_density
+FROM cities;
+```
