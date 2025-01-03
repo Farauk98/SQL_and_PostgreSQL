@@ -19,7 +19,7 @@ SELECT name, area FROM cities WHERE area > 4000;
 ## Comparison Operators in SQL
 
  |	Operator	| Description  |	Example |	
- |--|--|--|--|
+ |--|--|--|
  |	= |	Equal to	 |	`SELECT * FROM cities WHERE country = 'USA'; `|	
  |	> |	Greater than	 |	`SELECT * FROM cities WHERE population > 10000000; `|	
  |	< |	Less than	 |	`SELECT * FROM cities WHERE area < 1000; `|	
