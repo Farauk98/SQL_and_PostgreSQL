@@ -62,7 +62,7 @@ Only the calculation in the SELECT clause needs to be renamed, not the one in th
 
 - [Solution](./Ex3.sql)
 
-# Exercise 3
+# Exercise 4
 
 Try Updating Records In a Table!
 We are once again working with the phones table.
@@ -85,3 +85,26 @@ The second query should select all rows and columns of the phones table
 | Wave S8500  | Samsung      | 175   | 9259       |
 
 - [Solution](./Ex4.sql)
+
+# Exercise 5
+
+Practice Deleting Records
+We are once again working with the phones table.
+
+You are going to write two separate queries
+
+The first query should delete all phones that were created by Samsung
+
+The second query should select all rows and columns of the phones table
+
+| name        | manufacturer | price | units_sold |
+|--|--|--|--|
+| N1280       | Nokia        | 199   | 1925       |
+| Iphone 4    | Apple        | 399   | 9436       |
+| Galaxy S    | Samsung      | 299   | 2359       |
+| S5620 Monte | Samsung      | 250   | 2385       |
+| N8          | Nokia        | 150   | 7543       |
+| Droid       | Motorola     | 150   | 8395       |
+| Wave S8500  | Samsung      | 175   | 9259       |
+
+- [Solution](./Ex5.sql)
