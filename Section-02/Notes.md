@@ -30,3 +30,8 @@ SELECT name, area FROM cities WHERE area > 4000;
  |	!= |	Not equal to (alternative to <>)	 |	`SELECT * FROM cities WHERE population != 5000000;` |	
  |	BETWEEN	| Within a range of values	 |	`SELECT * FROM cities WHERE population BETWEEN 5000000 AND 10000000; `|	
  |	NOT IN	| Does not match any value in a list	 |	`SELECT * FROM cities WHERE country NOT IN ('USA', 'Canada'); `|	
+
+# TO DO
+- Where with "as"
+- Update
+- Delete
