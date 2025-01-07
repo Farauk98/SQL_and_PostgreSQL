@@ -24,3 +24,5 @@ This course is a fantastic resource for anyone looking to deepen their understan
   - [Exercises and Solutions](./Section-02/Exercises/Exercises.md)
 
 3. **Working with Tables**
+  - [Notes for Section 3](./Section-03/Notes.md)
+  - [Exercises and Solutions](./Section-03/Exercises/Exercises.md)
